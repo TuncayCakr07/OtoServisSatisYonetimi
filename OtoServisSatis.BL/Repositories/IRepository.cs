@@ -13,6 +13,8 @@ namespace OtoServisSatis.BL.Repositories
       
        List<T> GetAll(Expression<Func<T,bool>> expression);
 
+        IQueryable<T> GetAllByInclude(string table);
+
        T Find(int id);
 
        T Get(Expression<Func<T, bool>> expression);
