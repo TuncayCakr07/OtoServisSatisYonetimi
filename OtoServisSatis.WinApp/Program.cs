@@ -16,7 +16,7 @@ namespace OtoServisSatis.WinApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RolYonetimi());
+            Application.Run(new AracYonetimi());
         }
     }
 }

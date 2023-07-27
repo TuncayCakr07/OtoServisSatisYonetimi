@@ -51,6 +51,7 @@
             this.dgvRoller.RowTemplate.Height = 24;
             this.dgvRoller.Size = new System.Drawing.Size(350, 447);
             this.dgvRoller.TabIndex = 0;
+            this.dgvRoller.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRoller_CellClick);
             // 
             // groupBox1
             // 
@@ -78,6 +79,7 @@
             this.BtnSil.Size = new System.Drawing.Size(105, 29);
             this.BtnSil.TabIndex = 6;
             this.BtnSil.Text = "SİL";
+            this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
             // 
             // BtnGuncelle
             // 
@@ -88,6 +90,7 @@
             this.BtnGuncelle.Size = new System.Drawing.Size(110, 29);
             this.BtnGuncelle.TabIndex = 5;
             this.BtnGuncelle.Text = "GÜNCELLE";
+            this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
             // 
             // BtnEkle
             // 
@@ -103,11 +106,10 @@
             // lblRolId
             // 
             this.lblRolId.AutoSize = true;
-            this.lblRolId.Location = new System.Drawing.Point(31, 43);
+            this.lblRolId.Location = new System.Drawing.Point(108, 43);
             this.lblRolId.Name = "lblRolId";
-            this.lblRolId.Size = new System.Drawing.Size(60, 19);
+            this.lblRolId.Size = new System.Drawing.Size(0, 19);
             this.lblRolId.TabIndex = 3;
-            this.lblRolId.Text = "Rol Id:";
             // 
             // TxtRolAdi
             // 
@@ -119,16 +121,16 @@
             // lblId
             // 
             this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(119, 43);
+            this.lblId.Location = new System.Drawing.Point(42, 43);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(19, 19);
+            this.lblId.Size = new System.Drawing.Size(60, 19);
             this.lblId.TabIndex = 1;
-            this.lblId.Text = "0";
+            this.lblId.Text = "Rol Id:";
             // 
             // lblRol
             // 
             this.lblRol.AutoSize = true;
-            this.lblRol.Location = new System.Drawing.Point(19, 80);
+            this.lblRol.Location = new System.Drawing.Point(30, 74);
             this.lblRol.Name = "lblRol";
             this.lblRol.Size = new System.Drawing.Size(72, 19);
             this.lblRol.TabIndex = 0;
@@ -142,7 +144,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvRoller);
             this.Name = "RolYonetimi";
-            this.Text = "RolYonetimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Rol Yönetimi";
             this.Load += new System.EventHandler(this.RolYonetimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRoller)).EndInit();
             this.groupBox1.ResumeLayout(false);
