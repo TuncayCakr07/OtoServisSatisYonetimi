@@ -30,7 +30,8 @@
         {
             this.dgvMusteriler = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.BtnTemizle = new System.Windows.Forms.Button();
+            this.TxtNotlar = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
             this.BtnEkle = new System.Windows.Forms.Button();
@@ -49,8 +50,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.TxtNotlar = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMusteriler)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -70,7 +69,6 @@
             // 
             this.groupBox1.Controls.Add(this.TxtNotlar);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.BtnTemizle);
             this.groupBox1.Controls.Add(this.BtnGuncelle);
             this.groupBox1.Controls.Add(this.BtnSil);
             this.groupBox1.Controls.Add(this.BtnEkle);
@@ -97,14 +95,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Müşteri Bilgileri";
             // 
-            // BtnTemizle
+            // TxtNotlar
             // 
-            this.BtnTemizle.Location = new System.Drawing.Point(583, 214);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(99, 29);
-            this.BtnTemizle.TabIndex = 16;
-            this.BtnTemizle.Text = "TEMİZLE";
-            this.BtnTemizle.UseVisualStyleBackColor = true;
+            this.TxtNotlar.Location = new System.Drawing.Point(694, 81);
+            this.TxtNotlar.Multiline = true;
+            this.TxtNotlar.Name = "TxtNotlar";
+            this.TxtNotlar.Size = new System.Drawing.Size(162, 114);
+            this.TxtNotlar.TabIndex = 18;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(634, 84);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(62, 19);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Notlar:";
             // 
             // BtnGuncelle
             // 
@@ -261,23 +267,6 @@
             this.lblId.TabIndex = 0;
             this.lblId.Text = "0";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(634, 84);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 19);
-            this.label7.TabIndex = 17;
-            this.label7.Text = "Notlar:";
-            // 
-            // TxtNotlar
-            // 
-            this.TxtNotlar.Location = new System.Drawing.Point(694, 81);
-            this.TxtNotlar.Multiline = true;
-            this.TxtNotlar.Name = "TxtNotlar";
-            this.TxtNotlar.Size = new System.Drawing.Size(162, 114);
-            this.TxtNotlar.TabIndex = 18;
-            // 
             // MusteriYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -301,7 +290,6 @@
         private System.Windows.Forms.DataGridView dgvMusteriler;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button BtnTemizle;
         private System.Windows.Forms.Button BtnGuncelle;
         private System.Windows.Forms.Button BtnSil;
         private System.Windows.Forms.Button BtnEkle;

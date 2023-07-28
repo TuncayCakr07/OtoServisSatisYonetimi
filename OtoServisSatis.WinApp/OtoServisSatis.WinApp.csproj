@@ -95,6 +95,12 @@
     <Compile Include="RolYonetimi.Designer.cs">
       <DependentUpon>RolYonetimi.cs</DependentUpon>
     </Compile>
+    <Compile Include="SatisYonetimi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SatisYonetimi.Designer.cs">
+      <DependentUpon>SatisYonetimi.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AracYonetimi.resx">
       <DependentUpon>AracYonetimi.cs</DependentUpon>
     </EmbeddedResource>
@@ -118,6 +124,9 @@
     </Compile>
     <EmbeddedResource Include="RolYonetimi.resx">
       <DependentUpon>RolYonetimi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SatisYonetimi.resx">
+      <DependentUpon>SatisYonetimi.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
