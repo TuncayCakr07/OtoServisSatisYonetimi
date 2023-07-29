@@ -145,6 +145,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvMarkalar);
             this.Name = "MarkaYonetimi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Marka Yönetimi";
             this.Load += new System.EventHandler(this.MarkaYonetimi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMarkalar)).EndInit();
