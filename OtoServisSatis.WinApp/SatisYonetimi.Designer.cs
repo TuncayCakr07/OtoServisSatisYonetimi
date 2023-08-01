@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SatisYonetimi));
             this.dgvSatislar = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnGuncelle = new System.Windows.Forms.Button();
@@ -191,6 +192,7 @@
             this.ClientSize = new System.Drawing.Size(923, 550);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvSatislar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SatisYonetimi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Satış Yönetimi";

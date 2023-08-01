@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KullaniciYonetimi));
             this.dgvKullanicilar = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BtnTemizle = new System.Windows.Forms.Button();
             this.BtnGuncelle = new System.Windows.Forms.Button();
             this.BtnSil = new System.Windows.Forms.Button();
             this.BtnEkle = new System.Windows.Forms.Button();
@@ -51,7 +53,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
-            this.BtnTemizle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKullanicilar)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -99,6 +100,16 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Kullanıcı Bilgileri";
+            // 
+            // BtnTemizle
+            // 
+            this.BtnTemizle.Location = new System.Drawing.Point(583, 214);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(99, 29);
+            this.BtnTemizle.TabIndex = 16;
+            this.BtnTemizle.Text = "TEMİZLE";
+            this.BtnTemizle.UseVisualStyleBackColor = true;
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // BtnGuncelle
             // 
@@ -281,16 +292,6 @@
             this.lblId.TabIndex = 0;
             this.lblId.Text = "0";
             // 
-            // BtnTemizle
-            // 
-            this.BtnTemizle.Location = new System.Drawing.Point(583, 214);
-            this.BtnTemizle.Name = "BtnTemizle";
-            this.BtnTemizle.Size = new System.Drawing.Size(99, 29);
-            this.BtnTemizle.TabIndex = 16;
-            this.BtnTemizle.Text = "TEMİZLE";
-            this.BtnTemizle.UseVisualStyleBackColor = true;
-            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
-            // 
             // KullaniciYonetimi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -298,6 +299,7 @@
             this.ClientSize = new System.Drawing.Size(928, 541);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dgvKullanicilar);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "KullaniciYonetimi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı Yönetimi";

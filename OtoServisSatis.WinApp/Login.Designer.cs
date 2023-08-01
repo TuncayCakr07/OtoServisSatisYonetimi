@@ -30,15 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtKullaniciAdi = new System.Windows.Forms.TextBox();
-            this.TxtSifre = new System.Windows.Forms.TextBox();
-            this.BtnGiris = new DevExpress.XtraEditors.SimpleButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.BtnGiris = new DevExpress.XtraEditors.SimpleButton();
+            this.TxtSifre = new System.Windows.Forms.TextBox();
+            this.TxtKullaniciAdi = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -63,51 +63,21 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label1
+            // panel2
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 160);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Kullanıcı Adı:";
+            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel2.Location = new System.Drawing.Point(114, 93);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(250, 2);
+            this.panel2.TabIndex = 8;
             // 
-            // label2
+            // panel1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(94, 218);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 33);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Şifre:";
-            // 
-            // TxtKullaniciAdi
-            // 
-            this.TxtKullaniciAdi.Location = new System.Drawing.Point(166, 157);
-            this.TxtKullaniciAdi.Name = "TxtKullaniciAdi";
-            this.TxtKullaniciAdi.Size = new System.Drawing.Size(277, 40);
-            this.TxtKullaniciAdi.TabIndex = 2;
-            // 
-            // TxtSifre
-            // 
-            this.TxtSifre.Location = new System.Drawing.Point(166, 215);
-            this.TxtSifre.Name = "TxtSifre";
-            this.TxtSifre.PasswordChar = '*';
-            this.TxtSifre.Size = new System.Drawing.Size(277, 40);
-            this.TxtSifre.TabIndex = 3;
-            // 
-            // BtnGiris
-            // 
-            this.BtnGiris.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnGiris.Appearance.Options.UseFont = true;
-            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGiris.ImageOptions.Image")));
-            this.BtnGiris.Location = new System.Drawing.Point(207, 262);
-            this.BtnGiris.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.BtnGiris.Name = "BtnGiris";
-            this.BtnGiris.Size = new System.Drawing.Size(172, 44);
-            this.BtnGiris.TabIndex = 4;
-            this.BtnGiris.Text = "GİRİŞ";
-            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.panel1.Location = new System.Drawing.Point(46, 141);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(397, 2);
+            this.panel1.TabIndex = 7;
             // 
             // label3
             // 
@@ -129,21 +99,51 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Oto Servis Satış Takip Programı";
             // 
-            // panel1
+            // BtnGiris
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel1.Location = new System.Drawing.Point(46, 141);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(397, 2);
-            this.panel1.TabIndex = 7;
+            this.BtnGiris.Appearance.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGiris.Appearance.Options.UseFont = true;
+            this.BtnGiris.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("BtnGiris.ImageOptions.Image")));
+            this.BtnGiris.Location = new System.Drawing.Point(207, 262);
+            this.BtnGiris.Margin = new System.Windows.Forms.Padding(5);
+            this.BtnGiris.Name = "BtnGiris";
+            this.BtnGiris.Size = new System.Drawing.Size(172, 44);
+            this.BtnGiris.TabIndex = 4;
+            this.BtnGiris.Text = "GİRİŞ";
+            this.BtnGiris.Click += new System.EventHandler(this.BtnGiris_Click);
             // 
-            // panel2
+            // TxtSifre
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.panel2.Location = new System.Drawing.Point(114, 93);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(250, 2);
-            this.panel2.TabIndex = 8;
+            this.TxtSifre.Location = new System.Drawing.Point(166, 215);
+            this.TxtSifre.Name = "TxtSifre";
+            this.TxtSifre.PasswordChar = '*';
+            this.TxtSifre.Size = new System.Drawing.Size(277, 40);
+            this.TxtSifre.TabIndex = 3;
+            // 
+            // TxtKullaniciAdi
+            // 
+            this.TxtKullaniciAdi.Location = new System.Drawing.Point(166, 157);
+            this.TxtKullaniciAdi.Name = "TxtKullaniciAdi";
+            this.TxtKullaniciAdi.Size = new System.Drawing.Size(277, 40);
+            this.TxtKullaniciAdi.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(94, 218);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 33);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Şifre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(20, 160);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(145, 33);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Kullanıcı Adı:";
             // 
             // pictureBox1
             // 
@@ -163,6 +163,7 @@
             this.ClientSize = new System.Drawing.Size(515, 544);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";

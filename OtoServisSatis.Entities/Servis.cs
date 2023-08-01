@@ -9,7 +9,7 @@ namespace OtoServisSatis.Entities
 
         public DateTime ServisGelisTarihi { get; set; }
 
-        public string AracSorun { get; set;}
+        public string AracSorun { get; set; }
 
         public decimal ServisUcreti { get; set; }
 
@@ -22,7 +22,7 @@ namespace OtoServisSatis.Entities
         public string AracPlaka { get; set; }
 
         public string Marka { get; set; }
-        
+
         public string Model { get; set; }
 
         public string KasaTipi { get; set; }

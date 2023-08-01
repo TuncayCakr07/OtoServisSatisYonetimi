@@ -68,5 +68,10 @@ namespace OtoServisSatis.WinApp
         {
             Application.Exit();
         }
+
+        private void AnaMenu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

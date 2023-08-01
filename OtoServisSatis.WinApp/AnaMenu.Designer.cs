@@ -92,7 +92,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(530, 102);
+            this.label4.Location = new System.Drawing.Point(545, 102);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(142, 19);
@@ -148,7 +148,7 @@
             this.BtnAracYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnAracYonetimi.EditValue = ((object)(resources.GetObject("BtnAracYonetimi.EditValue")));
             this.BtnAracYonetimi.Location = new System.Drawing.Point(47, 19);
-            this.BtnAracYonetimi.Margin = new System.Windows.Forms.Padding(8, 8, 8, 8);
+            this.BtnAracYonetimi.Margin = new System.Windows.Forms.Padding(8);
             this.BtnAracYonetimi.Name = "BtnAracYonetimi";
             this.BtnAracYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnAracYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -162,7 +162,7 @@
             this.BtnKullaniciYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnKullaniciYonetimi.EditValue = ((object)(resources.GetObject("BtnKullaniciYonetimi.EditValue")));
             this.BtnKullaniciYonetimi.Location = new System.Drawing.Point(217, 19);
-            this.BtnKullaniciYonetimi.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.BtnKullaniciYonetimi.Margin = new System.Windows.Forms.Padding(10);
             this.BtnKullaniciYonetimi.Name = "BtnKullaniciYonetimi";
             this.BtnKullaniciYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnKullaniciYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -176,7 +176,7 @@
             this.BtnMarkaYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMarkaYonetimi.EditValue = ((object)(resources.GetObject("BtnMarkaYonetimi.EditValue")));
             this.BtnMarkaYonetimi.Location = new System.Drawing.Point(371, 19);
-            this.BtnMarkaYonetimi.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.BtnMarkaYonetimi.Margin = new System.Windows.Forms.Padding(12);
             this.BtnMarkaYonetimi.Name = "BtnMarkaYonetimi";
             this.BtnMarkaYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnMarkaYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -189,8 +189,8 @@
             // 
             this.BtnMusteriYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnMusteriYonetimi.EditValue = ((object)(resources.GetObject("BtnMusteriYonetimi.EditValue")));
-            this.BtnMusteriYonetimi.Location = new System.Drawing.Point(561, 19);
-            this.BtnMusteriYonetimi.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.BtnMusteriYonetimi.Location = new System.Drawing.Point(573, 19);
+            this.BtnMusteriYonetimi.Margin = new System.Windows.Forms.Padding(15);
             this.BtnMusteriYonetimi.Name = "BtnMusteriYonetimi";
             this.BtnMusteriYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnMusteriYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -204,7 +204,7 @@
             this.BtnRolYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnRolYonetimi.EditValue = ((object)(resources.GetObject("BtnRolYonetimi.EditValue")));
             this.BtnRolYonetimi.Location = new System.Drawing.Point(47, 179);
-            this.BtnRolYonetimi.Margin = new System.Windows.Forms.Padding(10, 10, 10, 10);
+            this.BtnRolYonetimi.Margin = new System.Windows.Forms.Padding(10);
             this.BtnRolYonetimi.Name = "BtnRolYonetimi";
             this.BtnRolYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnRolYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -218,7 +218,7 @@
             this.BtnSatisYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnSatisYonetimi.EditValue = ((object)(resources.GetObject("BtnSatisYonetimi.EditValue")));
             this.BtnSatisYonetimi.Location = new System.Drawing.Point(201, 179);
-            this.BtnSatisYonetimi.Margin = new System.Windows.Forms.Padding(12, 12, 12, 12);
+            this.BtnSatisYonetimi.Margin = new System.Windows.Forms.Padding(12);
             this.BtnSatisYonetimi.Name = "BtnSatisYonetimi";
             this.BtnSatisYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnSatisYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -231,7 +231,7 @@
             this.BtnServisYonetimi.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnServisYonetimi.EditValue = ((object)(resources.GetObject("BtnServisYonetimi.EditValue")));
             this.BtnServisYonetimi.Location = new System.Drawing.Point(371, 179);
-            this.BtnServisYonetimi.Margin = new System.Windows.Forms.Padding(15, 15, 15, 15);
+            this.BtnServisYonetimi.Margin = new System.Windows.Forms.Padding(15);
             this.BtnServisYonetimi.Name = "BtnServisYonetimi";
             this.BtnServisYonetimi.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnServisYonetimi.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -244,7 +244,7 @@
             this.BtnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BtnExit.EditValue = ((object)(resources.GetObject("BtnExit.EditValue")));
             this.BtnExit.Location = new System.Drawing.Point(561, 179);
-            this.BtnExit.Margin = new System.Windows.Forms.Padding(19, 19, 19, 19);
+            this.BtnExit.Margin = new System.Windows.Forms.Padding(19);
             this.BtnExit.Name = "BtnExit";
             this.BtnExit.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.BtnExit.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
@@ -276,10 +276,12 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AnaMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ana Menü";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.AnaMenu_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.BtnAracYonetimi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnKullaniciYonetimi.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMarkaYonetimi.Properties)).EndInit();

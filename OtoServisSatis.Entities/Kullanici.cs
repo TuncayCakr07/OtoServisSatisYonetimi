@@ -17,7 +17,7 @@ namespace OtoServisSatis.Entities
         public string Telefon { get; set; }
 
         public string KullaniciAdi { get; set; }
-        
+
         public string Sifre { get; set; }
 
         public bool Durum { get; set; }

@@ -5,13 +5,13 @@ namespace OtoServisSatis.Entities
     public class Musteri : IEntity
     {
         public int Id { get; set; }
-        
+
         public int AracId { get; set; }
-        
+
         public string Adi { get; set; }
-        
+
         public string Soyadi { get; set; }
-        
+
         public string TcNo { get; set; }
 
         public string EMail { get; set; }
