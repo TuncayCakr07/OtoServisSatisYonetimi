@@ -42,6 +42,15 @@ namespace OtoServisWepUI
         protected global::System.Web.UI.WebControls.TextBox TxtModelYili;
 
         /// <summary>
+        /// RequiredFieldValidator2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+
+        /// <summary>
         /// TxtRenk control.
         /// </summary>
         /// <remarks>
@@ -69,6 +78,15 @@ namespace OtoServisWepUI
         protected global::System.Web.UI.WebControls.TextBox TxtFiyat;
 
         /// <summary>
+        /// RequiredFieldValidator1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+
+        /// <summary>
         /// cbSatisDurum control.
         /// </summary>
         /// <remarks>
@@ -94,6 +112,15 @@ namespace OtoServisWepUI
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtKasa;
+
+        /// <summary>
+        /// lblId control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblId;
 
         /// <summary>
         /// BtnEkle control.

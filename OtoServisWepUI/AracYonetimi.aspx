@@ -9,7 +9,7 @@
 
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <asp:GridView ID="gvAraclar" runat="server" CellPadding="4" ForeColor="#333333" GridLines="None">
+    <asp:GridView ID="gvAraclar" runat="server" CellPadding="5" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="gvAraclar_SelectedIndexChanged" AutoGenerateSelectButton="True">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
@@ -24,7 +24,7 @@
     </asp:GridView>
 
     <hr />
-    <h1>Araç Bilgileri</h1>
+    <h1>Araç Bilgileri </h1>
     <table class="auto-style1">
         <tr> 
             <td>Marka:</td>
@@ -35,6 +35,7 @@
             <td>Model Yılı:</td>
             <td>
                 <asp:TextBox ID="TxtModelYili" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtModelYili" ErrorMessage="Model Yılı Boş Geçilemez!" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
         </tr>
         <tr>
@@ -51,6 +52,7 @@
             <td>Fiyatı:</td>
             <td>
                 <asp:TextBox ID="TxtFiyat" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtFiyat" ErrorMessage="Fiyat Boş Geçilemez!" ForeColor="Red"></asp:RequiredFieldValidator>
             </td>
             <td>Satış Durumu:</td>
             <td>
@@ -74,11 +76,13 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td>
+                <asp:Label ID="lblId" runat="server" Text="0"></asp:Label>
+            </td>
             <td>
                 <asp:Button ID="BtnEkle" runat="server" OnClick="BtnEkle_Click" Text="EKLE" />
                 <asp:Button ID="BtnGuncelle" runat="server" OnClick="BtnGuncelle_Click" Text="GÜNCELLE" />
-                <asp:Button ID="BtnSil" runat="server" OnClick="BtnSil_Click" Text="SİL" />
+                <asp:Button ID="BtnSil" runat="server" OnClick="BtnSil_Click" Text="SİL" ValidationGroup="sil" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
