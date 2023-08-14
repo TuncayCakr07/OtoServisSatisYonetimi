@@ -73,6 +73,7 @@
   <ItemGroup>
     <Content Include="AracYonetimi.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="KullaniciYonetimi.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +86,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.aspx.cs">
+      <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KullaniciYonetimi.aspx.designer.cs">
+      <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OtoServisSablon.Master.cs">
       <DependentUpon>OtoServisSablon.Master</DependentUpon>
