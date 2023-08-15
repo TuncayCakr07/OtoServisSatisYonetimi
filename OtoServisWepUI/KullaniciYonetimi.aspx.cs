@@ -34,10 +34,63 @@ namespace OtoServisWepUI
             dgvKullanicilar.DataSource = specialquery;
             //dgvKullanicilar.DataSource = manager.GetAll();
             dgvKullanicilar.DataBind();
+            cbKullaniciRol.DataSource = roleManager.GetAll();
+            cbKullaniciRol.DataBind();
         }
         protected void Page_Load(object sender, EventArgs e)
         {
             Yukle();
+        }
+
+        protected void btnEkle_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                int islemsonucu = manager.Add
+                    (
+                      new Kullanici
+                      {
+                          Adi = txtAd.Text,
+                          Durum = cbDurum.Checked,
+                          KayitTarihi = DateTime.Now,
+                          EMail = txtEmail.Text,
+                          KullaniciAdi = TxtKullaniciAd.Text,
+                          RolId = int.Parse(cbKullaniciRol.SelectedValue.ToString()),
+                          Sifre = TxtSifre.Text,
+                          Soyadi = txtSoyad.Text,
+                          Telefon = txtTelefon.Text,
+                      }
+                    );
+                if (islemsonucu > 0)
+                {
+                    Response.Redirect("KullaniciYonetimi.aspx");
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox("Hata Oluştu! Kayıt Edilemedi !");
+
+
+            }
+        }
+
+        protected void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void BtnSil_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void dgvKullanicilar_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+        void MessageBox(string mesaj = "")
+        {
+            ClientScript.RegisterStartupScript(Page.GetType(), "Uyarı!", $"<script>alert('{mesaj}')</script>");
         }
     }
 }
