@@ -56,12 +56,14 @@
                 <td>Kullanıcı Adı:</td>
                 <td>
                     <asp:TextBox ID="TxtKullaniciAd" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtKullaniciAd" ErrorMessage="Boş Geçilemez!" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
                 <td>Şifre:</td>
                 <td>
                     <asp:TextBox ID="TxtSifre" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtSifre" ErrorMessage="Boş Geçilemez!" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
             </tr>
             <tr>
@@ -90,7 +92,7 @@
                 <td>
                     <asp:Button ID="btnEkle" runat="server" OnClick="btnEkle_Click" Text="EKLE" />
                     <asp:Button ID="BtnGuncelle" runat="server" OnClick="BtnGuncelle_Click" Text="GÜNCELLE" />
-                    <asp:Button ID="BtnSil" runat="server" OnClick="BtnSil_Click" Text="SİL" />
+                    <asp:Button ID="BtnSil" runat="server" OnClick="BtnSil_Click" Text="SİL" ValidationGroup="sil" />
                 </td>
             </tr>
         </table>
