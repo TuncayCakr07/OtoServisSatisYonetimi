@@ -71,12 +71,21 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AnaMenu.aspx" />
     <Content Include="AracYonetimi.aspx" />
     <Content Include="Global.asax" />
     <Content Include="KullaniciYonetimi.aspx" />
+    <Content Include="Login.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AnaMenu.aspx.cs">
+      <DependentUpon>AnaMenu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnaMenu.aspx.designer.cs">
+      <DependentUpon>AnaMenu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="AracYonetimi.aspx.cs">
       <DependentUpon>AracYonetimi.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -93,6 +102,13 @@
     </Compile>
     <Compile Include="KullaniciYonetimi.aspx.designer.cs">
       <DependentUpon>KullaniciYonetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="OtoServisSablon.Master.cs">
       <DependentUpon>OtoServisSablon.Master</DependentUpon>
