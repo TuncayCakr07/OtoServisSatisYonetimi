@@ -76,6 +76,8 @@
     <Content Include="Global.asax" />
     <Content Include="KullaniciYonetimi.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="MarkaYonetimi.aspx" />
+    <Content Include="MusteriYonetimi.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -109,6 +111,20 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MarkaYonetimi.aspx.cs">
+      <DependentUpon>MarkaYonetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MarkaYonetimi.aspx.designer.cs">
+      <DependentUpon>MarkaYonetimi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MusteriYonetimi.aspx.cs">
+      <DependentUpon>MusteriYonetimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MusteriYonetimi.aspx.designer.cs">
+      <DependentUpon>MusteriYonetimi.aspx</DependentUpon>
     </Compile>
     <Compile Include="OtoServisSablon.Master.cs">
       <DependentUpon>OtoServisSablon.Master</DependentUpon>
