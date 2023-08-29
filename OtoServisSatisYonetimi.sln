@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoServisSatis.DAL", "OtoSe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoServisSatis.BL", "OtoServisSatis.BL\OtoServisSatis.BL.csproj", "{180DD93E-688A-43FB-BB66-A8582288F1AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoServisWepUI", "OtoServisWepUI\OtoServisWepUI.csproj", "{CC3F1B2A-9A2E-40FA-93CB-1F58ADC654F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OtoServisWebFormUI", "OtoServisWepUI\OtoServisWebFormUI.csproj", "{CC3F1B2A-9A2E-40FA-93CB-1F58ADC654F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
