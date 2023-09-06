@@ -1,21 +1,17 @@
-﻿using OtoServisSatis.BL;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System;
 using System.Web.UI;
-using System.Web.UI.WebControls;
+using OtoServisSatis.BL;
 
 namespace OtoServisWepUI
 {
     public partial class Login : System.Web.UI.Page
     {
-        KullaniciManager manager = new KullaniciManager(); 
+        KullaniciManager manager = new KullaniciManager();
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-    
+
         protected void BtnGiris_Click(object sender, EventArgs e)
         {
             try
@@ -23,23 +19,22 @@ namespace OtoServisWepUI
                 var kullanıcı = manager.Get(x => x.KullaniciAdi == TxtKullaniciAdi.Text && x.Sifre == TxtSifre.Text && x.Durum == true);
                 if (kullanıcı != null)
                 {
+                    Session["Admin"] = kullanıcı;
                     Response.Redirect("AnaMenu.aspx");
                 }
                 else
                 {
-                    MessageBox("Hata Oluştu! Kullanıcı Bulunamadı!");
+                    MessageBox("Kullanıcı Girişi Başarısız! Bilgileri Kontrol Ediniz!");
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox("Hata Oluştu! Kullanıcı Bulunamadı!");
             }
-        }
-
-
-        void MessageBox(string mesaj = "")
-        {
-            ClientScript.RegisterStartupScript(Page.GetType(), "Uyarı!", $"<script>alert('{mesaj}')</script>");
+            void MessageBox(string mesaj = "")
+            {
+                ClientScript.RegisterStartupScript(Page.GetType(), "Uyarı!", $"<script>alert('{mesaj}')</script>");
+            }
         }
     }
 }

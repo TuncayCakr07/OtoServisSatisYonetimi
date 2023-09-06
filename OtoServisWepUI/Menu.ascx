@@ -32,6 +32,14 @@
         <a href="/ServisYonetimi.aspx">Servis Yönetimi</a>
     </li>
 
-    <asp:LinkButton ID="lbCikis" runat="server">Çıkış</asp:LinkButton>
+     <li>
+     <asp:LinkButton ID="lbCikis" runat="server" OnClick="lbCikis_Click" ValidationGroup="cikis"> Çıkış </asp:LinkButton>
+ </li>
 
-</ul>
+    </ul>
+
+
+    
+
+
+

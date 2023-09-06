@@ -65,9 +65,9 @@ namespace OtoServisSatis.WinApp
                     MessageBox.Show("Marka Eklendi","Bilgi",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
             }
-            catch (Exception hata)
+            catch (Exception)
             {
-                MessageBox.Show("Hata Oluştu! Kayıt Eklenemedi !","Hata",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Hata Oluştu! Kayıt Eklenemedi !","Hata!",MessageBoxButtons.OK,MessageBoxIcon.Error);
 
             }
         }
@@ -97,7 +97,7 @@ namespace OtoServisSatis.WinApp
                     MessageBox.Show("Güncellemek İstediğiniz Kaydı Seçiniz!","Uyarı!",MessageBoxButtons.OK,MessageBoxIcon.Warning);
                 }
             }
-            catch (Exception hata)
+            catch (Exception)
             {
                 MessageBox.Show("Hata Oluştu! Kayıt Güncellenemedi !", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
 

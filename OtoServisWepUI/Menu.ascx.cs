@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 
 namespace OtoServisWepUI
 {
@@ -12,6 +7,15 @@ namespace OtoServisWepUI
         protected void Page_Load(object sender, EventArgs e)
         {
 
+        }
+
+        protected void lbCikis_Click(object sender, EventArgs e)
+        {
+            if (Session["Admin"] != null)
+            {
+                Session.Remove("Admin");
+                Response.Redirect("/Login.aspx");
+            }
         }
     }
 }
